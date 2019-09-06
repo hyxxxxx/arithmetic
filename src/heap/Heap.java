@@ -1,6 +1,7 @@
 package heap;
 
 import java.util.Arrays;
+import java.util.PriorityQueue;
 
 public class Heap {
 
@@ -106,6 +107,12 @@ public class Heap {
         Heap.sort(ints, 7);
         System.out.println(Arrays.toString(ints));
 
+        PriorityQueue<Integer> queue = new PriorityQueue<>();
+        queue.offer(2);
+        queue.offer(5);
+        queue.offer(3);
+        queue.offer(1);
+        queue.offer(4);
     }
 
 }
